@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="description" content="A tiny multi-page interactive love adventure"><meta name="theme-color" content="#ff72a8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operation: Make You Smile 💘</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="sky"></div><div class="confetti-layer" id="confetti"></div>
+<div class="shell">
+<section class="screen active" id="page1"><div class="card">
+<div class="pill">A very serious & highly cute mission</div><div class="mascot" id="introMascot">🐻‍❣️</div>
+<h1 class="headline">Hey you, <span class="script">cutie!</span></h1><p class="sub">I have a tiny question. It took me approximately 47 years (and 3 brain cells) to build up the courage.</p>
+<div class="btnrow"><button class="btn primary" onclick="go(2)">Okay, tell me 👀</button><button class="btn secondary" onclick="tease()">I'm busy 😌</button></div><div class="foot">CONFIDENTIAL CUTE BUSINESS</div></div></section>
+<section class="screen" id="page2"><div class="card"><div class="pill">Chapter 2 · the question</div><div class="mascot" id="askMascot">🥹💗</div>
+<h1 class="headline" id="askTitle">Will you be my favourite person? 💌</h1><p class="sub" id="askText">The yes button is looking very friendly. Just saying.</p>
+<div class="choice-zone" id="choiceZone"><button class="btn primary" id="yes2" onclick="go(3)">YES! 💖</button><button class="btn secondary" id="no2">No 😶</button></div>
+<div class="foot" id="page2Foot">CHOOSE WISELY (THE BEAR IS WATCHING)</div><div class="meter"><span id="meterBar"></span></div></div></section>
+<section class="screen" id="page3"><div class="card"><div class="pill">Chapter 3 · secret unlocked</div><div class="gift" id="giftEmoji">🎁</div><h1 class="headline">You found the <span class="script">secret!</span></h1><p class="sub">A tiny digital gift, because your smile deserves a little extra effort.</p><div class="secret">✨ Official certificate: <b>Certified Adorable Human</b><br>Valid forever. Non-transferable. No refunds. ✨</div><div class="btnrow"><button class="btn primary" onclick="go(4);burst(60)">Open my surprise 💝</button><button class="btn secondary" onclick="go(2)">Wait, go back!</button></div><div class="foot">100% HANDCRAFTED NONSENSE</div></div></section>
+<section class="screen" id="page4"><div class="card successCard"><div class="pill">Mission status · success</div><div class="biglove">💘</div><h1 class="headline">YAY! <span class="script">You said yes!</span></h1><p class="loveNote" id="finalNote">My heart just did a backflip.
+
+Thank you for making this little corner of the internet extra happy. 💗</p><div class="btnrow"><button class="btn primary" onclick="burst(45);toast('Heart delivery dispatched! 💌')">More hearts please 💞</button><button class="btn secondary" onclick="go(1)">Replay this silliness ↻</button></div><div class="foot">THE END · OR THE BEGINNING? 🌷</div></div></section>
+</div>
+<script src="script.js"></script></body></html>
